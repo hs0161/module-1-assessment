@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+let gitDefinition = "Git is a program that tracks your changes to a code project."
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+let gitHubDefinition = "Github is a website that allows us upload and download our git repositories."
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -25,7 +25,7 @@
     It should be a string containing your best definition of what 'git init' does.
 */
 
-//CODE HERE
+let gitInitDefinition = "Git Init initializes the local repository into the current folder."
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,7 +33,7 @@
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-//CODE HERE
+let gitCloneDefinition = "Git Clone copies an exisiting Git repository into a new directory."
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -41,7 +41,7 @@
     It should be a string containing your best definition of what 'git status' does.
 */
 
-//CODE HERE
+let gitStatusDefintion = "Git Status shows the current state of your Git working directory and staging area."
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -52,7 +52,9 @@
     It should be a string containing the code to add all files.
 */
 
-//CODE HERE
+let gitAddDefinition = "Git Add allows us to add the files to be tracked."
+
+let gitAddCode = "git add ."
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -63,8 +65,9 @@
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-//CODE HERE
+let gitCommitDefinition = "Git Commit allows us to create a 'snapshot' of the files that we're currently tracking."
 
+let gitCommitCode = "git commit -m 'initial commit'"
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -72,4 +75,4 @@
     It should be a string containing your best definition of what 'git push' does.
 */
 
-//CODE HERE
+let gitPushDefinition = "Git Push allows you to send the commits from your local repository to the remote repository."

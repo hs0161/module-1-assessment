@@ -48,10 +48,14 @@ const pinkPrice = .55
 
     Log `totalAcres` to the console.
 */
+let allAcres = fujiAcres.concat(galaAcres, pinkAcres)
+let totalAcres = 0
 
-// CODE HERE
+for (let i = 0; i < allAcres.length; i++){
+    totalAcres += allAcres[i]
+} console.log(totalAcres)
 
-
+/* I created the first variable, allAcres to create a new array to list out all 3 arrays together using concat(). Then, I created another variable, totalAcres, so that I can loop allAcres and get the sum of the elements in allAcres together to get the number 63.
 
 
 
@@ -67,7 +71,8 @@ const pinkPrice = .55
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+let averageDailyAcres = totalAcres / 7
+console.log(averageDailyAcres)
 
 
 
