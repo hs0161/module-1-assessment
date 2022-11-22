@@ -51,23 +51,9 @@ const pinkPrice = .55
 let allAcres = fujiAcres.concat(galaAcres, pinkAcres);
 let totalAcres = 0;
 
-const nums = [1, 50, 3, 2, 51]
-
-let max = 0;
-
-for (let i = 0; i < nums.length; i++){
-    let currentNum = nums[i]
-    if (currentNum > max) {
-        max = currentNum
-    }
-}
-console.log(max);
-
 
 for (let i = 0; i < allAcres.length; i++){
     totalAcres += allAcres[i]
-    totalAcres = totalAcres + allAcres[i]
-
 }
 console.log(totalAcres);
 
