@@ -204,13 +204,13 @@ for (let i = 0; i < galaTons.length; i++){
 console.log(galaPounds);
 
 let pinkPounds = 0;
-let sumPinkPounds = 0;
+let sumPinkTons = 0;
 for (let i = 0; i < pinkTons.length; i++){
     sumPinkTons += pinkTons[i];
     pinkPounds = sumPinkTons * 2000;
 } console.log(pinkPounds);
 
-// Here, I created a new variable sumFijiPounds to help me create the for-loop to iterate through and multiple 2000 to the total pounds. 
+// Here, I created a new variable sumFijiTons to help me create the for-loop to iterate through and multiple 2000 to the total pounds. 
 
 
 // PROBLEM 6
