@@ -48,12 +48,12 @@ const pinkPrice = .55
 
     Log `totalAcres` to the console.
 */
-let allAcres = fujiAcres.concat(galaAcres, pinkAcres)
-let totalAcres = 0
+let allAcres = fujiAcres.concat(galaAcres, pinkAcres);
+let totalAcres = 0;
 
 for (let i = 0; i < allAcres.length; i++){
     totalAcres += allAcres[i]
-} console.log(totalAcres)
+} console.log(totalAcres);
 
 /* I created the first variable, allAcres to create a new array to list out all 3 arrays together using concat(). Then, I created another variable, totalAcres, so that I can loop allAcres and get the sum of the elements in allAcres together to get the number 63.
 
@@ -71,8 +71,8 @@ for (let i = 0; i < allAcres.length; i++){
     Log `averageDailyAcres` to the console.
 */
 
-let averageDailyAcres = totalAcres / 7
-console.log(averageDailyAcres)
+let averageDailyAcres = totalAcres / 7;
+console.log(averageDailyAcres);
 
 /* I created a variable averageDailyAcres by using the variable totalAcres and dividing it by 7 to get the average of number acres picked per day.
 
@@ -116,6 +116,10 @@ while (acresLeft > 0){
 } console.log(days);
 
 
+// I created a while-loop to make it where as long as acresLeft is greater than zero then it will run the loop. As it's iterating through, I subtracted the averageDailyAcres from the acresLeft and then added 1 to the days by using the ++ at the end. I just realized that I literally repeated the directions, not sure how else to really explain why I wrote what I wrote.
+
+
+
 // PROBLEM 4
 
 /*
@@ -144,21 +148,21 @@ while (acresLeft > 0){
 let fujiTons = []
 for (let i = 0; i < fujiAcres.length; i++){
     fujiTons[i] = fujiAcres[i] * 6.5;
-} console.log(fujiTons)
+} console.log(fujiTons);
 
 
 let galaTons = []
 for (let i = 0; i < galaAcres.length; i++){
     galaTons[i] = galaAcres[i] * 6.5;
-} console.log(galaTons)
+} console.log(galaTons);
 
 
 let pinkTons = []
 for (let i = 0; i < pinkAcres.length; i++){
     pinkTons[i] = pinkAcres[i] * 6.5;
-} console.log(pinkTons)
+} console.log(pinkTons);
 
-
+//Although I didn't use the hint, I was able to get the number (checked by doing the math myself). I created an empty variable for the tons. Then with a for-loop, after each iteration, I multiplied 6.5 to each acre to get the total tons from each variety of apples. 
 
 // PROBLEM 5
 
@@ -181,14 +185,14 @@ let sumFujiPounds = 0;
 for (let i = 0; i < fujiTons.length; i++){
     sumFujiPounds += fujiTons[i];
     fujiPounds = sumFujiPounds * 2000;
-} console.log(fujiPounds)
+} console.log(fujiPounds);
 
 let galaPounds = 0;
 let sumGalaPounds = 0;
 for (let i = 0; i < galaTons.length; i++){
     sumGalaPounds += galaTons[i];
     galaPounds = sumGalaPounds * 2000;
-} console.log(galaPounds)
+} console.log(galaPounds);
 
 
 let pinkPounds = 0;
@@ -196,9 +200,9 @@ let sumPinkPounds = 0;
 for (let i = 0; i < pinkTons.length; i++){
     sumPinkPounds += pinkTons[i];
     pinkPounds = sumPinkPounds * 2000;
-} console.log(pinkPounds)
+} console.log(pinkPounds);
 
-
+// Here, I created a new variable sumFijiPounds to help me create the for-loop to iterate through and multiple 2000 to the total pounds. 
 
 
 // PROBLEM 6
@@ -217,9 +221,6 @@ for (let i = 0; i < pinkTons.length; i++){
     console. 
 */
 
-//const fujiPrice = .89
-//const galaPrice = .64
-//const pinkPrice = .55
 
 let fujiProfit = fujiPounds * fujiPrice;
 console.log(fujiProfit);
@@ -230,7 +231,7 @@ console.log(galaProfit);
 let pinkProfit = pinkPounds * pinkPrice;
 console.log(pinkProfit);
 
-
+//For number 6, I multiplied the price by the pounds for each variety to come up with the profit of each variety of apples.
 
 
 // PROBLEM 7
@@ -245,3 +246,5 @@ console.log(pinkProfit);
 
 let totalProfit = fujiProfit + galaProfit + pinkProfit;
 console.log(totalProfit);
+
+// Here, I created the variable totalProfit and had it to equal the sum of the profits from all apples.
