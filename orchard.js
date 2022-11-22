@@ -196,18 +196,18 @@ console.log(fujiPounds);
 
 
 let galaPounds = 0;
-let sumGalaPounds = 0;
+let sumGalaTons = 0;
 for (let i = 0; i < galaTons.length; i++){
-    sumGalaPounds += galaTons[i];
-    galaPounds = sumGalaPounds * 2000;
+    sumGalaTons += galaTons[i];
+    galaPounds = sumGalaTons * 2000;
 }
 console.log(galaPounds);
 
 let pinkPounds = 0;
 let sumPinkPounds = 0;
 for (let i = 0; i < pinkTons.length; i++){
-    sumPinkPounds += pinkTons[i];
-    pinkPounds = sumPinkPounds * 2000;
+    sumPinkTons += pinkTons[i];
+    pinkPounds = sumPinkTons * 2000;
 } console.log(pinkPounds);
 
 // Here, I created a new variable sumFijiPounds to help me create the for-loop to iterate through and multiple 2000 to the total pounds. 
