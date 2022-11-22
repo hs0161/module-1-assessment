@@ -51,9 +51,25 @@ const pinkPrice = .55
 let allAcres = fujiAcres.concat(galaAcres, pinkAcres);
 let totalAcres = 0;
 
+const nums = [1, 50, 3, 2, 51]
+
+let max = 0;
+
+for (let i = 0; i < nums.length; i++){
+    let currentNum = nums[i]
+    if (currentNum > max) {
+        max = currentNum
+    }
+}
+console.log(max);
+
+
 for (let i = 0; i < allAcres.length; i++){
     totalAcres += allAcres[i]
-} console.log(totalAcres);
+    totalAcres = totalAcres + allAcres[i]
+
+}
+console.log(totalAcres);
 
 /* I created the first variable, allAcres to create a new array to list out all 3 arrays together using concat(). Then, I created another variable, totalAcres, so that I can loop allAcres and get the sum of the elements in allAcres together to get the number 63.
 
@@ -148,19 +164,22 @@ while (acresLeft > 0){
 let fujiTons = []
 for (let i = 0; i < fujiAcres.length; i++){
     fujiTons[i] = fujiAcres[i] * 6.5;
-} console.log(fujiTons);
+} 
+console.log(fujiTons);
 
 
 let galaTons = []
 for (let i = 0; i < galaAcres.length; i++){
     galaTons[i] = galaAcres[i] * 6.5;
-} console.log(galaTons);
+} 
+console.log(galaTons);
 
 
 let pinkTons = []
 for (let i = 0; i < pinkAcres.length; i++){
     pinkTons[i] = pinkAcres[i] * 6.5;
-} console.log(pinkTons);
+} 
+console.log(pinkTons);
 
 //Although I didn't use the hint, I was able to get the number (checked by doing the math myself). I created an empty variable for the tons. Then with a for-loop, after each iteration, I multiplied 6.5 to each acre to get the total tons from each variety of apples. 
 
@@ -181,19 +200,22 @@ for (let i = 0; i < pinkAcres.length; i++){
 */
 
 let fujiPounds = 0;
-let sumFujiPounds = 0;
+let sumFujiTons = 0;
 for (let i = 0; i < fujiTons.length; i++){
-    sumFujiPounds += fujiTons[i];
-    fujiPounds = sumFujiPounds * 2000;
-} console.log(fujiPounds);
+    sumFujiTons += fujiTons[i];
+    fujiPounds = sumFujiTons * 2000;
+}
+console.log(fujiPounds);
+
+
 
 let galaPounds = 0;
 let sumGalaPounds = 0;
 for (let i = 0; i < galaTons.length; i++){
     sumGalaPounds += galaTons[i];
     galaPounds = sumGalaPounds * 2000;
-} console.log(galaPounds);
-
+}
+console.log(galaPounds);
 
 let pinkPounds = 0;
 let sumPinkPounds = 0;
